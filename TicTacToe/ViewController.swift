@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var winnerLabel: UILabel!
     
-    var gameState = [0, 0, 0, 0, 0, 0, 0, 0, 0] //0 : Empty || 1 : Noughts || 2 : Cross - This will keep track of the button tag that has been pressed.
+    var gameState = [0, 0, 0, 0, 0, 0, 0, 0, 0] //0 : Empty || 1 : Noughts || 2 : Cross - This will keep track of the button tag that has been pressed and thus win / lose.
     
     var winCombination = [ [0,3,6] , [1,4,7], [2,5,8] , [0,1,2], [3,4,5], [6,7,8], [0,4,8], [2,4,6] ]
     var activeGame : Bool = true
@@ -57,6 +57,10 @@ class ViewController: UIViewController {
                 playAgain.isHidden = false
                 activeGame = false
             }
+        }
+        
+        if !gameState.contains(0) {
+            playAgain.isHidden = false
         }
         
     }
