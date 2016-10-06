@@ -11,39 +11,55 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var button: UIButton!
-    var isPlayer1:  Bool  = false
+    var activePlayer: Int = 1
+    //1 is cross. 2 is noughts.
+    @IBOutlet weak var playAgain: UIButton!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        print("TicTacToe Initialized")
-    }
+    @IBOutlet weak var winnerLabel: UILabel!
     
+    var gameState = [0, 0, 0, 0, 0, 0, 0, 0, 0] //0 : Empty || 1 : Noughts || 2 : Cross - This will keep track of the button tag that has been pressed.
+    
+    var winCombination = [ [0,3,6] , [1,4,7], [2,5,8] , [0,1,2], [3,4,5], [6,7,8], [0,4,8], [2,4,6] ]
+    var activeGame : Bool = true
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         UIApplication.shared.statusBarStyle = .lightContent
+        playAgain.isHidden = true
         
     }
     
-    var combination = [ [0,3,6] , [1,4,7], [2,5,8] , [0,1,2], [3,4,5], [6,7,8], [0,4,8], [2,4,6] ]
+    @IBOutlet weak var playGameAgain: UIButton!
+    
     @IBAction func playerPressed(_ sender: AnyObject) {
         
-        print("Button Pressed, success! " + " \(sender.tag!)")
-      
-        if isPlayer1 {
-            if sender.image == #imageLiteral(resourceName: "Circle") {
-                print("It's a circle!")
+        let activePosition: Int = sender.tag
+        
+        if gameState[activePosition] == 0 && activeGame {
+            if activePlayer == 1 {
+                sender.setImage(#imageLiteral(resourceName: "Circle"), for: []) //[] is the new syntax for iOS 10, sets to default :)
+                activePlayer = 2
+                
+                gameState[activePosition] = 1
             }
-            sender.setImage(#imageLiteral(resourceName: "Circle"), for: [])
-            isPlayer1 = !isPlayer1
+            else {
+                sender.setImage(#imageLiteral(resourceName: "Cross"), for: [])
+                activePlayer = 1
+                
+                gameState[activePosition] = 2 //Works perfectly!
+            }
+
         }
-        else {
-            sender.setImage(#imageLiteral(resourceName: "Cross"), for: [])
-            isPlayer1 = !isPlayer1
+        
+        for combination in winCombination {
+            if gameState[combination[0]] != 0 && gameState[combination[0]] == gameState[combination[1]] && gameState[combination[1]] == gameState[combination[2]] {
+
+                winnerLabel.text = "Player \(activePlayer) Wins!"
+                playAgain.isHidden = false
+                activeGame = false
+            }
         }
+        
     }
-    
 
-   
 }
-
