@@ -34,28 +34,28 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GB6-r8-PeU">
+                            <button opaque="NO" tag="1" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GB6-r8-PeU">
                                 <frame key="frameInset" minX="24" minY="165" width="79" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="playerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WgH-me-jOm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NoP-ce-Dsv">
+                            <button opaque="NO" tag="2" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NoP-ce-Dsv">
                                 <frame key="frameInset" minX="148" minY="164" width="79" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="playerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IQl-lW-J7U"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4j-XY-8Bu">
+                            <button opaque="NO" tag="4" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4j-XY-8Bu">
                                 <frame key="frameInset" minX="24" minY="295" width="79" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="playerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Ru-vf-dR7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0m-f1-nsW">
+                            <button opaque="NO" tag="5" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0m-f1-nsW">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="79" id="Dbv-iS-uXs"/>
                                     <constraint firstAttribute="width" constant="79" id="qkb-i8-lAm"/>
@@ -64,14 +64,14 @@
                                     <action selector="playerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EOe-DJ-D8q"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="6" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aje-r0-Di2">
+                            <button opaque="NO" tag="7" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aje-r0-Di2">
                                 <frame key="frameInset" minX="24" minY="422" width="79" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="playerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Lu-ml-0VA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="7" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwm-FG-87y">
+                            <button opaque="NO" tag="8" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwm-FG-87y">
                                 <frame key="frameInset" minX="148" minY="421" width="79" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
@@ -89,21 +89,21 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="2" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMc-6W-2mm">
+                            <button opaque="NO" tag="3" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMc-6W-2mm">
                                 <frame key="frameInset" minX="266" minY="164" width="79" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="playerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lpH-Zh-Gdm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="5" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61B-xp-bEh">
+                            <button opaque="NO" tag="6" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61B-xp-bEh">
                                 <frame key="frameInset" minX="266" minY="294" width="79" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="playerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Roj-uw-eKM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="8" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFA-Pu-ufX">
+                            <button opaque="NO" tag="9" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFA-Pu-ufX">
                                 <frame key="frameInset" minX="266" minY="421" width="79" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
@@ -117,6 +117,9 @@
                                 <state key="normal" title="Play Again!">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="playGameAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="32K-Wy-5h3"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZs-vH-Ofz">
                                 <frame key="frameInset" minX="54" minY="549" width="267" height="36"/>
@@ -139,7 +142,6 @@
                     <connections>
                         <outlet property="button" destination="BFA-Pu-ufX" id="ngI-O7-Zr2"/>
                         <outlet property="playAgain" destination="0eW-sA-1JX" id="N4L-gS-bnG"/>
-                        <outlet property="playGameAgain" destination="0eW-sA-1JX" id="WEb-RU-eqO"/>
                         <outlet property="winnerLabel" destination="aZs-vH-Ofz" id="e0n-9T-3no"/>
                     </connections>
                 </viewController>

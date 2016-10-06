@@ -29,11 +29,10 @@ class ViewController: UIViewController {
         
     }
     
-    @IBOutlet weak var playGameAgain: UIButton!
     
     @IBAction func playerPressed(_ sender: AnyObject) {
         
-        let activePosition: Int = sender.tag
+        let activePosition: Int = sender.tag - 1
         
         if gameState[activePosition] == 0 && activeGame {
             if activePlayer == 1 {
@@ -62,4 +61,18 @@ class ViewController: UIViewController {
         
     }
 
+    @IBAction func playGameAgain(_ sender: AnyObject) {
+        playAgain.isHidden = true
+        
+        for i in 1...9{
+            let tmpButton = self.view.viewWithTag(i) as? UIButton
+            tmpButton?.setImage(nil, for: [])
+            gameState[i-1] = 0
+        }
+        
+        activePlayer = 1
+        activeGame = true
+        winnerLabel.text = ""
+        
+    }
 }
