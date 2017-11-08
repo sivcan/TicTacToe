@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var button: UIButton!
-    var activePlayer: Int = 1
+    var activePlayer: Int = 2
     //1 is cross. 2 is noughts.
     @IBOutlet weak var playAgain: UIButton!
     
@@ -29,6 +29,7 @@ class ViewController: UIViewController {
         
     }
     
+    var count: Int = 1
     
     @IBAction func playerPressed(_ sender: AnyObject) {
         
@@ -52,15 +53,19 @@ class ViewController: UIViewController {
         
         for combination in winCombination {
             if gameState[combination[0]] != 0 && gameState[combination[0]] == gameState[combination[1]] && gameState[combination[1]] == gameState[combination[2]] {
-
-                winnerLabel.text = "Player \(activePlayer) Wins!"
+                                winnerLabel.text = "Player \(activePlayer) Wins!"
                 playAgain.isHidden = false
                 activeGame = false
+                count = 2
             }
         }
         
         if !gameState.contains(0) {
             playAgain.isHidden = false
+        }
+        if playAgain.isHidden == false && count  == 1{
+            winnerLabel.text = "It's a draw!"
+            print("It's a draw")
         }
         
     }
@@ -77,6 +82,7 @@ class ViewController: UIViewController {
         activePlayer = 1
         activeGame = true
         winnerLabel.text = ""
+        count = 1
         
     }
 }

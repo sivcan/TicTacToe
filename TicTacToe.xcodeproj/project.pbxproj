@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CE75B341DA69C84002EC940 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF8F6601DA604A600259597 /* ViewController.swift */; };
+		5CE75B351DA69C86002EC940 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF8F6601DA604A600259597 /* ViewController.swift */; };
 		5CF8F65F1DA604A600259597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF8F65E1DA604A600259597 /* AppDelegate.swift */; };
 		5CF8F6611DA604A600259597 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF8F6601DA604A600259597 /* ViewController.swift */; };
 		5CF8F6641DA604A600259597 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CF8F6621DA604A600259597 /* Main.storyboard */; };
@@ -193,7 +195,7 @@
 				TargetAttributes = {
 					5CF8F65A1DA604A600259597 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = JG5ZJ6PDZM;
+						DevelopmentTeam = 2JY8BUUD26;
 						ProvisioningStyle = Automatic;
 					};
 					5CF8F66E1DA604A600259597 = {
@@ -271,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CE75B351DA69C86002EC940 /* ViewController.swift in Sources */,
 				5CF8F6741DA604A600259597 /* TicTacToeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CE75B341DA69C84002EC940 /* ViewController.swift in Sources */,
 				5CF8F67F1DA604A600259597 /* TicTacToeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,7 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = JG5ZJ6PDZM;
+				DEVELOPMENT_TEAM = 2JY8BUUD26;
 				INFOPLIST_FILE = TicTacToe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sivcansingh.TicTacToe;
@@ -428,7 +432,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = JG5ZJ6PDZM;
+				DEVELOPMENT_TEAM = 2JY8BUUD26;
 				INFOPLIST_FILE = TicTacToe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sivcansingh.TicTacToe;
@@ -514,6 +518,7 @@
 				5CF8F6851DA604A600259597 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5CF8F6861DA604A600259597 /* Build configuration list for PBXNativeTarget "TicTacToeTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +527,7 @@
 				5CF8F6881DA604A600259597 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5CF8F6891DA604A600259597 /* Build configuration list for PBXNativeTarget "TicTacToeUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +536,7 @@
 				5CF8F68B1DA604A600259597 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
